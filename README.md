@@ -12,7 +12,7 @@ The environment is pinned to **JDK 17** (see `.devcontainer/devcontainer.json`),
 
 2. **Make your own copy of this project.** On the template repository, click **Use this template → Create a new repository**. Name it **`oop-minibank-<your-rollno>`** and set it to **Private**. Create it.
 
-3. **Add your instructor as a collaborator.** In *your* new repo: **Settings → Collaborators → Add people →** type **`<INSTRUCTOR-USERNAME>`** and send the invite. (Your instructor will accept it.)
+3. **Add your instructor as a collaborator.** In *your* new repo: **Settings → Collaborators → Add people →** type **`<siddharthshah-cse>`** and send the invite. (Your instructor will accept it.)
 
 4. **Open a Codespace.** Click the green **Code** button → **Codespaces** tab → **Create codespace on main**. Wait for it to build — it opens VS Code in your browser with Java ready.
 
