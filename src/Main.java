@@ -1,18 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Account[] accounts = new Account[3];
-        accounts[0] = new Account("Riya", 5000);
-        accounts[1] = new Account("Aman", 1000);
-        accounts[2] = new Account("Neha");          // 0 opening balance
+        Account a1 = new Account("Riya", 4000);
+        Account a2 = new Account("Aman", 4000);          // different account number
 
-        accounts[0].deposit(2000);                   // -> 7000
-        boolean ok1 = accounts[0].withdraw(3000);    // -> 4000, true
-        boolean ok2 = accounts[0].withdraw(10000);   // unchanged, false
+        System.out.println(a1);                                  // toString
+        System.out.println("a1 equals a2 -> " + a1.equals(a2));  // false (numbers differ)
+        System.out.println("a1 equals a1 -> " + a1.equals(a1));  // true
 
-        for (Account a : accounts) {
-            System.out.println(a.getAccountNumber() + " | " + a.getOwnerName() + " | " + a.getBalance());
-        }
-        System.out.println("withdraw 3000 -> " + ok1);
-        System.out.println("withdraw 10000 -> " + ok2);
+        Object obj = a1;
+        System.out.println("obj instanceof Account -> " + (obj instanceof Account));
+
+        Customer c = new Customer("Riya", "riya@example.com", "9876543210");
+        c.setAddress(new Customer.Address("12 MG Road", "Nadiad", "387001"));
+        System.out.println(c + " lives in " + c.getAddress().getCity());
     }
 }

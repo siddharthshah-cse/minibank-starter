@@ -23,4 +23,19 @@ public class Account {
     public String getOwnerName()     { return ownerName; }
     public long getBalance()         { return balance; }
     public boolean isActive()        { return active; }
+    // ---- new in Practical 3 ----
+    public String toString() {
+        return accountNumber + " | " + ownerName + " | " + balance;
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Account)) return false;
+        Account other = (Account) o;
+        return accountNumber.equals(other.accountNumber);
+    }
+
+    public int hashCode() {
+        return java.util.Objects.hashCode(accountNumber);
+    }
 }
